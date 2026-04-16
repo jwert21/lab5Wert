@@ -14,6 +14,9 @@ public class HMACSender {
         byte[] rawHmac = mac.doFinal(message.getBytes());
         System.out.println(Base64.getEncoder().encodeToString(rawHmac));
 
-        if (MessageDigest)
+        if (isValid) {
+            System.out.println("HMAC verified - message is authentic")
+                    System.out.println("Message couuld ")
+        }
     }
 }
