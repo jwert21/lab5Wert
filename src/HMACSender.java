@@ -14,6 +14,6 @@ public class HMACSender {
         byte[] rawHmac = mac.doFinal(message.getBytes());
         System.out.println(Base64.getEncoder().encodeToString(rawHmac));
 
-        if (MessageDIgest)
+        if (MessageDigest)
     }
 }
