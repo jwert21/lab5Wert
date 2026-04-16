@@ -4,7 +4,7 @@ import java.util.Base64;
 
 public class HMACSender {
     public static void main(String[] args) throws Exception {
-        String key = "secret key";
+        String key = "Secret Key";
         String message = "Hello World!";
 
         Mac mac = Mac.getInstance("HmacSHA256");
