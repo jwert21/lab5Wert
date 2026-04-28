@@ -5,22 +5,19 @@ import java.util.Base64;
 public class HMACReceiver {
 
     public static void main(String[] args) throws Exception {
-        Scanner sc = new Scanner(System.out);
         String key = "Secret Key";
 
         // Simulated received data
         String receivedMessage = "Hello World!";
         String receivedHmacBase64 = "PASTE_SENDER_OUTPUT_HERE";
 
-        Mac mac = Mac.getInstance();
-
         boolean isValid = verifyHMAC(receivedMessage, receivedHmacBase64, key);
 
         if (isValid) {
             System.out.println("Message is authentic");
-            System.out.println("Message: " + message);
+            System.out.println("Message: " + receivedMessage);
         } else {
-            System.out.println("Message has been tampered");
+            System.out.println("Message has been tampered.");
         }
     }
 
