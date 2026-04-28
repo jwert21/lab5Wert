@@ -19,7 +19,7 @@ public class HMACSender {
         boolean isValid = hmac.equals(hmac);
 
         if (isValid) {
-            System.out.println("HMAC verified - message is authentic");
+            System.out.println("HMAC verified - message is authentic.");
             System.out.println("Message could be trusted.");
         }
     }
